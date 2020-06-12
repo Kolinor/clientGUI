@@ -12,13 +12,9 @@ import java.util.HashMap;
 public class mastermindgui  {
     private JPanel panel1;
     private JTabbedPane tabbedPane1;
-    private JTextField adresseIPField;
-    private JTextField portField2;
-    private JTextField pseudoField;
     private JButton connexionButton;
     private JComboBox comboBox1;
     private JButton envoyerButton;
-    private JButton deconnexionButton;
     private JButton sauvegarderMaPartieButton;
     private littlecircle littlecircle4;
     private littlecircle littlecircle5;
@@ -32,10 +28,6 @@ public class mastermindgui  {
     private littlecircle littlecircle21;
     private circle circle12;
     private circle circle11;
-    private JLabel portLabel;
-    private JLabel pseudoLabel;
-    private JLabel adresseIPLabel;
-
 
 
     HashMap<String, Color> indice = new HashMap<>();
