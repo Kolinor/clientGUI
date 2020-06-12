@@ -29,7 +29,7 @@ public class mastermindgui extends Container {
     private circle circle11;
     private circle circle13;
     private circle circle14;
-    private static JTextArea textArea1;
+    private JTextArea textArea1;
 
 
     HashMap<String, Color> indice = new HashMap<>();
@@ -40,7 +40,7 @@ public class mastermindgui extends Container {
         return panel1;
     }
 
-    public static void writeTextArea1(String str) {
+    public void writeTextArea1(String str) {
         textArea1.setText(str);
     }
 
