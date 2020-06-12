@@ -9,7 +9,7 @@ import java.util.HashMap;
 
 
 
-public class mastermindgui  {
+public class mastermindgui extends Container {
     private JPanel panel1;
     private JTabbedPane tabbedPane1;
     private JComboBox comboBoxChoix;
@@ -29,12 +29,20 @@ public class mastermindgui  {
     private circle circle11;
     private circle circle13;
     private circle circle14;
-    private JTextArea textArea1;
+    private static JTextArea textArea1;
 
 
     HashMap<String, Color> indice = new HashMap<>();
     ArrayList<String> couleur = new ArrayList<>();
     HashMap<String, String> circleColor = new HashMap<>();
+
+    public JPanel panel1() {
+        return panel1;
+    }
+
+    public static void writeTextArea1(String str) {
+        textArea1.setText(str);
+    }
 
     public mastermindgui(){
 
@@ -100,140 +108,6 @@ public class mastermindgui  {
         });
     }
 
-
-
-
-    public static void main(String[] args) throws IOException, InterruptedException, ClassNotFoundException, UnsupportedLookAndFeelException, InstantiationException, IllegalAccessException {
-
-
-
-
-
-
-
-        Utility u = new Utility();
-        IOCommand command = new IOCommand(u);
-
-        boolean connexion = command.connexion("192.168.1.17", 6002);
-
-
-
-         //UIManager.setLookAndFeel("com.sun.java.swing.plaf.motif.MotifLookAndFeel");
-
-
-
-        JFrame frame = new JFrame("Mastermind");
-        frame.setContentPane(new mastermindgui().panel1);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setVisible(true);
-        frame.setSize(1350,700);
-        frame.setLocationRelativeTo(null);
-
-        textArea1.ecrire();
-        //UIManager.setLookAndFeel(javax.swing.plaf.metal.MetalLookAndFeel);
-
-        // c'est un début elle est pas encore terminé
-        //oui sauf le mode duel là je travail sur le chargement de la partie
-        if(!connexion) return;
-        command.run();
-        String str = "";
-        String choix = "";
-        int difficulty;
-        int select;
-
-
-
-        command.ecrireEcran("Quel est ton login ?");
-        command.ecrireReseau(command.lireEcran(""));
-        Thread.sleep(100);
-
-        do {
-            command.ecrireEcran("Que voulez vous faire ?");
-            command.ecrireEcran("1. Mode classique\n2. Mode compétition\n3. Mode aventure\n5. quit");
-            choix = command.lireEcran("");
-
-            if (choix.equals("1")) {
-                str = command.lireEcran("Quel niveaux de difficultés voulez-vous ?");
-                difficulty = Integer.parseInt(str);
-                System.out.println(str);
-                command.ecrireReseau("!1 " + str);
-
-                while (true) {
-                    if (u.getWin()) break;
-                    if (u.getLoose()) break;
-                    command.ecrireEcran("Choisir une combinaison");
-                    u.couleurDisponible();
-                    str = command.lireEcran("Rentrer une combinaison de " + difficulty + " couleurs ou 'quit'");
-                    if (str.equals("quit")) {
-                        command.ecrireReseau("stop");
-                        break;
-                    }
-                    command.ecrireReseau("!1 " + str);
-                }
-            } else if (choix.equals("2")) {
-
-            } else if (choix.equals("3")) {
-                command.ecrireEcran("Bienvenue dans le mode aventure !");
-                str = command.lireEcran("1. Nouvelle partie\n2. Charger une partie");
-                select = Integer.parseInt(str);
-                command.ecrireReseau("!3 " + str);
-                if (select == 1) {
-                    difficulty = 1;
-                    while (difficulty == 10 || !str.equals("quit")) {
-                        command.ecrireReseau("!3 " + difficulty);
-                        while (true) {
-                            Thread.sleep(100);
-                            if (u.getWin()) break;
-                            if (u.getLoose()) break;
-                            command.ecrireEcran("Choisir une combinaison");
-                            u.couleurDisponible();
-                            str = command.lireEcran("Rentrer une combinaison de " + u.getDifficulty() + " couleurs ou 'quit' ou save");
-                            if (str.equals("save")) {
-                                str = command.lireEcran("Rentrer un nom à la sauvegarde");
-                                command.ecrireReseau("!3 " + "save " + str + " " + difficulty);
-                                Thread.sleep(100);
-                                str = "quit";
-                            }
-                            if (str.equals("quit")) {
-                                command.ecrireReseau("stop");
-                                break;
-                            }
-                            command.ecrireReseau("!1 " + str);
-                        }
-                        if (difficulty == 10) command.ecrireEcran("Vous avez terminé le mode aventure !");
-                        difficulty++;
-                    }
-                } else {
-
-                }
-            }
-
-            ArrayList<String> t = new ArrayList<>();
-
-
-
-        } while(!choix.equals("5"));
-        command.ecrireReseau("quit");
-        command.deconnexion();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    }
-
-
-
     public void setColorCircle(circle c) {
 
         String color = circleColor.get(c.getToolTipText());
@@ -253,17 +127,7 @@ public class mastermindgui  {
     }
 
     public void ecrire (String t){
-
         textArea1.setText(t);
 
-
-
     }
-
-
-
-
-
-
-
 }
