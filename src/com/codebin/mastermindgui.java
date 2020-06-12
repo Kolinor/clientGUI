@@ -99,7 +99,7 @@ public class mastermindgui  {
         Utility u = new Utility();
         IOCommand command = new IOCommand(u);
 
-        boolean connexion = command.connexion("192.168.1.17", 6002);
+        boolean connexion = command.connexion("192.168.1.25", 6002);
 
 
         JFrame frame = new JFrame("Mastermind");
