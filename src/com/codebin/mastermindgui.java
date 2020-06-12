@@ -2,17 +2,17 @@ package com.codebin;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
+import java.awt.event.*;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
 
+
 public class mastermindgui  {
     private JPanel panel1;
     private JTabbedPane tabbedPane1;
-    private JComboBox comboBox1;
+    private JComboBox comboBoxChoix;
     private JButton envoyerButton;
     private JButton sauvegarderMaPartieButton;
     private littlecircle littlecircle4;
@@ -27,6 +27,9 @@ public class mastermindgui  {
     private littlecircle littlecircle21;
     private circle circle12;
     private circle circle11;
+    private circle circle13;
+    private circle circle14;
+    private JTextArea textArea1;
 
 
     HashMap<String, Color> indice = new HashMap<>();
@@ -34,6 +37,8 @@ public class mastermindgui  {
     HashMap<String, String> circleColor = new HashMap<>();
 
     public mastermindgui(){
+
+
         couleur.add("rouge");
         couleur.add("jaune");
         couleur.add("bleu");
@@ -66,12 +71,39 @@ public class mastermindgui  {
                 setColorCircle(circle12);
             }
         });
+        circle13.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                setColorCircle(circle13);
+            }
+        });
+        circle14.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                setColorCircle(circle14);
+            }
+        });
+        comboBoxChoix.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        comboBoxChoix.addItemListener(new ItemListener() {
+            @Override
+            public void itemStateChanged(ItemEvent e) {
+
+                System.out.println(comboBoxChoix.getSelectedItem());
+            }
+        });
     }
 
 
 
 
-    public static void main(String[] args) throws IOException, InterruptedException {
+    public static void main(String[] args) throws IOException, InterruptedException, ClassNotFoundException, UnsupportedLookAndFeelException, InstantiationException, IllegalAccessException {
 
 
 
@@ -82,7 +114,12 @@ public class mastermindgui  {
         Utility u = new Utility();
         IOCommand command = new IOCommand(u);
 
-        boolean connexion = command.connexion("192.168.1.25", 6002);
+        boolean connexion = command.connexion("192.168.1.17", 6002);
+
+
+
+         //UIManager.setLookAndFeel("com.sun.java.swing.plaf.motif.MotifLookAndFeel");
+
 
 
         JFrame frame = new JFrame("Mastermind");
@@ -92,7 +129,8 @@ public class mastermindgui  {
         frame.setSize(1350,700);
         frame.setLocationRelativeTo(null);
 
-
+        textArea1.ecrire();
+        //UIManager.setLookAndFeel(javax.swing.plaf.metal.MetalLookAndFeel);
 
         // c'est un début elle est pas encore terminé
         //oui sauf le mode duel là je travail sur le chargement de la partie
@@ -102,6 +140,8 @@ public class mastermindgui  {
         String choix = "";
         int difficulty;
         int select;
+
+
 
         command.ecrireEcran("Quel est ton login ?");
         command.ecrireReseau(command.lireEcran(""));
@@ -192,7 +232,10 @@ public class mastermindgui  {
 
     }
 
+
+
     public void setColorCircle(circle c) {
+
         String color = circleColor.get(c.getToolTipText());
         int i = couleur.indexOf(color);
         System.out.println(i);
@@ -208,6 +251,15 @@ public class mastermindgui  {
         c.setForeground(this.indice.get(color));
 
     }
+
+    public void ecrire (String t){
+
+        textArea1.setText(t);
+
+
+
+    }
+
 
 
 
