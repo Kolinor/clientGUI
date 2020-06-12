@@ -12,7 +12,6 @@ import java.util.HashMap;
 public class mastermindgui  {
     private JPanel panel1;
     private JTabbedPane tabbedPane1;
-    private JButton connexionButton;
     private JComboBox comboBox1;
     private JButton envoyerButton;
     private JButton sauvegarderMaPartieButton;
@@ -67,14 +66,6 @@ public class mastermindgui  {
                 setColorCircle(circle12);
             }
         });
-
-        connexionButton.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                super.mouseClicked(e);
-
-            }
-        });
     }
 
 
@@ -103,7 +94,8 @@ public class mastermindgui  {
 
 
 
-
+        // c'est un début elle est pas encore terminé
+        //oui sauf le mode duel là je travail sur le chargement de la partie
         if(!connexion) return;
         command.run();
         String str = "";
