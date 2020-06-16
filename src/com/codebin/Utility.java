@@ -10,22 +10,22 @@ public class Utility {
     private boolean isWin = false;
     private boolean isLoose = false;
     private int difficulty;
-    private littlecircle c1;
-    private littlecircle c2;
-    private littlecircle c3;
-    private littlecircle c4;
+    private LittleCircle c1;
+    private LittleCircle c2;
+    private LittleCircle c3;
+    private LittleCircle c4;
     private JTextArea area;
     private HashMap<String, Color> indice = new HashMap<>();
 
 
-    public Utility(littlecircle c1, littlecircle c2, littlecircle c3, littlecircle c4, JTextArea area) {
+    public Utility(LittleCircle c1, LittleCircle c2, LittleCircle c3, LittleCircle c4, JTextArea area) {
         this.c1 = c1;
         this.c2 = c2;
         this.c3 = c3;
         this.c4 = c4;
         this.area = area;
-        indice.put("rouge", new Color(255, 0, 15));
-        indice.put("orange", new Color(255, 140, 11));
+        indice.put("rouge", new Color(255, 0, 0));
+        indice.put("orange", new Color(255, 127, 0));
         indice.put("vert", new Color(24, 227, 21));
     }
 

@@ -4,9 +4,9 @@ package com.codebin;
 import javax.swing.JComponent;
 import java.awt.*;
 
-public class circle extends JComponent {
+public class Circle extends JComponent {
 
-    public circle(){
+    public Circle(){
 
 
     }

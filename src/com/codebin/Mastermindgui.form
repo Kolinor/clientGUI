@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.codebin.mastermindgui">
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.codebin.Mastermindgui">
   <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
       <xy x="20" y="20" width="1776" height="700"/>
     </constraints>
-    <properties/>
+    <properties>
+      <background color="-11049372"/>
+      <foreground color="-11049372"/>
+    </properties>
     <border type="none"/>
     <children>
       <grid id="5808c" layout-manager="GridLayoutManager" row-count="10" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
@@ -13,10 +16,13 @@
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-11049372"/>
+          <foreground color="-11049372"/>
+        </properties>
         <border type="none"/>
         <children>
-          <component id="c7fc9" class="com.codebin.circle" binding="circle1">
+          <component id="c7fc9" class="com.codebin.Circle" binding="Circle1">
             <constraints>
               <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -26,12 +32,13 @@
             </constraints>
             <properties>
               <background color="-16777216"/>
-              <foreground color="-16777216"/>
+              <foreground color="-4473925"/>
               <opaque value="false"/>
-              <toolTipText value="circle1 1"/>
+              <toolTipText value="Circle1 1"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="efc7c" class="com.codebin.circle" binding="circle25">
+          <component id="efc7c" class="com.codebin.Circle" binding="Circle25">
             <constraints>
               <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -41,11 +48,12 @@
             </constraints>
             <properties>
               <background color="-16777216"/>
-              <foreground color="-16777216"/>
-              <toolTipText value="circle7 1"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle7 1"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="59cd9" class="com.codebin.circle" binding="circle21">
+          <component id="59cd9" class="com.codebin.Circle" binding="Circle21">
             <constraints>
               <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -55,11 +63,12 @@
             </constraints>
             <properties>
               <background color="-16777216"/>
-              <foreground color="-16777216"/>
-              <toolTipText value="circle6 1"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle6 1"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="83aed" class="com.codebin.circle" binding="circle38">
+          <component id="83aed" class="com.codebin.Circle" binding="Circle38">
             <constraints>
               <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -69,11 +78,12 @@
             </constraints>
             <properties>
               <background color="-16777216"/>
-              <foreground color="-16777216"/>
-              <toolTipText value="circle10 2"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle10 2"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="b55ff" class="com.codebin.circle" binding="circle39">
+          <component id="b55ff" class="com.codebin.Circle" binding="Circle39">
             <constraints>
               <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -83,11 +93,12 @@
             </constraints>
             <properties>
               <background color="-16777216"/>
-              <foreground color="-16777216"/>
-              <toolTipText value="circle10 3"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle10 3"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="8fc04" class="com.codebin.circle" binding="circle40">
+          <component id="8fc04" class="com.codebin.Circle" binding="Circle40">
             <constraints>
               <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -97,11 +108,12 @@
             </constraints>
             <properties>
               <background color="-16777216"/>
-              <foreground color="-16777216"/>
-              <toolTipText value="circle10 4"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle10 4"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="ffea2" class="com.codebin.circle" binding="circle29">
+          <component id="ffea2" class="com.codebin.Circle" binding="Circle29">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -111,11 +123,12 @@
             </constraints>
             <properties>
               <background color="-16777216"/>
-              <foreground color="-16777216"/>
-              <toolTipText value="circle8 1"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle8 1"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="168b2" class="com.codebin.circle" binding="circle33">
+          <component id="168b2" class="com.codebin.Circle" binding="Circle33">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -125,11 +138,12 @@
             </constraints>
             <properties>
               <background color="-16777216"/>
-              <foreground color="-16777216"/>
-              <toolTipText value="circle9 1"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle9 1"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="c1924" class="com.codebin.circle" binding="circle34">
+          <component id="c1924" class="com.codebin.Circle" binding="Circle34">
             <constraints>
               <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -139,11 +153,12 @@
             </constraints>
             <properties>
               <background color="-16777216"/>
-              <foreground color="-16777216"/>
-              <toolTipText value="circle9 2"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle9 2"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="82e6f" class="com.codebin.circle" binding="circle35">
+          <component id="82e6f" class="com.codebin.Circle" binding="Circle35">
             <constraints>
               <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -153,11 +168,12 @@
             </constraints>
             <properties>
               <background color="-16777216"/>
-              <foreground color="-16777216"/>
-              <toolTipText value="circle9 3"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle9 3"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="a2735" class="com.codebin.circle" binding="circle36">
+          <component id="a2735" class="com.codebin.Circle" binding="Circle36">
             <constraints>
               <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -167,11 +183,12 @@
             </constraints>
             <properties>
               <background color="-16777216"/>
-              <foreground color="-16777216"/>
-              <toolTipText value="circle9 4"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle9 4"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="884e2" class="com.codebin.circle" binding="circle32">
+          <component id="884e2" class="com.codebin.Circle" binding="Circle32">
             <constraints>
               <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -181,11 +198,12 @@
             </constraints>
             <properties>
               <background color="-16777216"/>
-              <foreground color="-16777216"/>
-              <toolTipText value="circle8 4"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle8 4"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="2a11a" class="com.codebin.circle" binding="circle31">
+          <component id="2a11a" class="com.codebin.Circle" binding="Circle31">
             <constraints>
               <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -195,11 +213,12 @@
             </constraints>
             <properties>
               <background color="-16777216"/>
-              <foreground color="-16777216"/>
-              <toolTipText value="circle8 3"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle8 3"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="9760d" class="com.codebin.circle" binding="circle30">
+          <component id="9760d" class="com.codebin.Circle" binding="Circle30">
             <constraints>
               <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -209,11 +228,12 @@
             </constraints>
             <properties>
               <background color="-16777216"/>
-              <foreground color="-16777216"/>
-              <toolTipText value="circle8 2"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle8 2"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="80164" class="com.codebin.circle" binding="circle26">
+          <component id="80164" class="com.codebin.Circle" binding="Circle26">
             <constraints>
               <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -223,11 +243,12 @@
             </constraints>
             <properties>
               <background color="-16777216"/>
-              <foreground color="-16777216"/>
-              <toolTipText value="circle7 2"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle7 2"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="6a5c4" class="com.codebin.circle" binding="circle27">
+          <component id="6a5c4" class="com.codebin.Circle" binding="Circle27">
             <constraints>
               <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -237,11 +258,12 @@
             </constraints>
             <properties>
               <background color="-16777216"/>
-              <foreground color="-16777216"/>
-              <toolTipText value="circle7 3"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle7 3"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="c57bd" class="com.codebin.circle" binding="circle28">
+          <component id="c57bd" class="com.codebin.Circle" binding="Circle28">
             <constraints>
               <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -251,11 +273,12 @@
             </constraints>
             <properties>
               <background color="-16777216"/>
-              <foreground color="-16777216"/>
-              <toolTipText value="circle7 4"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle7 4"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="a4e80" class="com.codebin.circle" binding="circle22">
+          <component id="a4e80" class="com.codebin.Circle" binding="Circle22">
             <constraints>
               <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -265,11 +288,12 @@
             </constraints>
             <properties>
               <background color="-16777216"/>
-              <foreground color="-16777216"/>
-              <toolTipText value="circle6 2"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle6 2"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="f80e6" class="com.codebin.circle" binding="circle23">
+          <component id="f80e6" class="com.codebin.Circle" binding="Circle23">
             <constraints>
               <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -279,11 +303,12 @@
             </constraints>
             <properties>
               <background color="-16777216"/>
-              <foreground color="-16777216"/>
-              <toolTipText value="circle6 3"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle6 3"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="e558b" class="com.codebin.circle" binding="circle24">
+          <component id="e558b" class="com.codebin.Circle" binding="Circle24">
             <constraints>
               <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -293,11 +318,12 @@
             </constraints>
             <properties>
               <background color="-16777216"/>
-              <foreground color="-16777216"/>
-              <toolTipText value="circle6 2"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle6 2"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="7894f" class="com.codebin.circle" binding="circle4">
+          <component id="7894f" class="com.codebin.Circle" binding="Circle4">
             <constraints>
               <grid row="9" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -307,11 +333,12 @@
             </constraints>
             <properties>
               <background color="-16777216"/>
-              <foreground color="-16777216"/>
-              <toolTipText value="circle1 4"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle1 4"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="b7b07" class="com.codebin.circle" binding="circle3">
+          <component id="b7b07" class="com.codebin.Circle" binding="Circle3">
             <constraints>
               <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -321,11 +348,12 @@
             </constraints>
             <properties>
               <background color="-16777216"/>
-              <foreground color="-16777216"/>
-              <toolTipText value="circle1 3"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle1 3"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="949d" class="com.codebin.circle" binding="circle2">
+          <component id="949d" class="com.codebin.Circle" binding="Circle2">
             <constraints>
               <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -335,11 +363,12 @@
             </constraints>
             <properties>
               <background color="-16777216"/>
-              <foreground color="-16777216"/>
-              <toolTipText value="circle1 2"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle1 2"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="5a792" class="com.codebin.circle" binding="circle37">
+          <component id="5a792" class="com.codebin.Circle" binding="Circle37">
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -349,200 +378,246 @@
             </constraints>
             <properties>
               <background color="-16777216"/>
-              <foreground color="-16777216"/>
-              <toolTipText value="circle10 1"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle10 1"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="51fb" class="com.codebin.circle" binding="circle17">
+          <component id="51fb" class="com.codebin.Circle" binding="Circle17">
             <constraints>
-              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
                 <preferred-size width="50" height="50"/>
                 <maximum-size width="50" height="50"/>
               </grid>
             </constraints>
             <properties>
-              <toolTipText value="circle5 1"/>
+              <background color="-4473925"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle5 1"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="e4ca3" class="com.codebin.circle" binding="circle9">
+          <component id="e4ca3" class="com.codebin.Circle" binding="Circle9">
             <constraints>
-              <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
+              <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
                 <preferred-size width="50" height="50"/>
                 <maximum-size width="50" height="50"/>
               </grid>
             </constraints>
             <properties>
-              <toolTipText value="circle3 1"/>
+              <background color="-4473925"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle3 1"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="58c3f" class="com.codebin.circle" binding="circle13">
+          <component id="58c3f" class="com.codebin.Circle" binding="Circle13">
             <constraints>
-              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
                 <preferred-size width="50" height="50"/>
                 <maximum-size width="50" height="50"/>
               </grid>
             </constraints>
             <properties>
-              <toolTipText value="circle4 1"/>
+              <background color="-4473925"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle4 1"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="34ee0" class="com.codebin.circle" binding="circle5">
+          <component id="34ee0" class="com.codebin.Circle" binding="Circle5">
             <constraints>
-              <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
+              <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
                 <preferred-size width="50" height="50"/>
                 <maximum-size width="50" height="50"/>
               </grid>
             </constraints>
             <properties>
-              <toolTipText value="circle2 1"/>
+              <background color="-4473925"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle2 1"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="f8a24" class="com.codebin.circle" binding="circle18">
+          <component id="f8a24" class="com.codebin.Circle" binding="Circle18">
             <constraints>
-              <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
+              <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
                 <preferred-size width="50" height="50"/>
                 <maximum-size width="50" height="50"/>
               </grid>
             </constraints>
             <properties>
-              <toolTipText value="circle5 2"/>
+              <background color="-4473925"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle5 2"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="d0af2" class="com.codebin.circle" binding="circle14">
+          <component id="d0af2" class="com.codebin.Circle" binding="Circle14">
             <constraints>
-              <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
+              <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
                 <preferred-size width="50" height="50"/>
                 <maximum-size width="50" height="50"/>
               </grid>
             </constraints>
             <properties>
-              <toolTipText value="circle4 2"/>
+              <background color="-4473925"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle4 2"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="9a2f3" class="com.codebin.circle" binding="circle10">
+          <component id="9a2f3" class="com.codebin.Circle" binding="Circle10">
             <constraints>
-              <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
+              <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
                 <preferred-size width="50" height="50"/>
                 <maximum-size width="50" height="50"/>
               </grid>
             </constraints>
             <properties>
-              <toolTipText value="circle3 2"/>
+              <background color="-4473925"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle3 2"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="e3ca0" class="com.codebin.circle" binding="circle6">
+          <component id="e3ca0" class="com.codebin.Circle" binding="Circle6">
             <constraints>
-              <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
+              <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
                 <preferred-size width="50" height="50"/>
                 <maximum-size width="50" height="50"/>
               </grid>
             </constraints>
             <properties>
-              <toolTipText value="circle2 2"/>
+              <background color="-4473925"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle2 2"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="92986" class="com.codebin.circle" binding="circle19">
+          <component id="92986" class="com.codebin.Circle" binding="Circle19">
             <constraints>
-              <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
+              <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
                 <preferred-size width="50" height="50"/>
                 <maximum-size width="50" height="50"/>
               </grid>
             </constraints>
             <properties>
-              <toolTipText value="circle5 3"/>
+              <background color="-4473925"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle5 3"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="c2e27" class="com.codebin.circle" binding="circle15">
+          <component id="c2e27" class="com.codebin.Circle" binding="Circle15">
             <constraints>
-              <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
+              <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
                 <preferred-size width="50" height="50"/>
                 <maximum-size width="50" height="50"/>
               </grid>
             </constraints>
             <properties>
-              <toolTipText value="circle4 3"/>
+              <background color="-4473925"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle4 3"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="838f" class="com.codebin.circle" binding="circle11">
+          <component id="838f" class="com.codebin.Circle" binding="Circle11">
             <constraints>
-              <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
+              <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
                 <preferred-size width="50" height="50"/>
                 <maximum-size width="50" height="50"/>
               </grid>
             </constraints>
             <properties>
-              <toolTipText value="circle3 3"/>
+              <background color="-4473925"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle3 3"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="e9486" class="com.codebin.circle" binding="circle7">
+          <component id="e9486" class="com.codebin.Circle" binding="Circle7">
             <constraints>
-              <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
+              <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
                 <preferred-size width="50" height="50"/>
                 <maximum-size width="50" height="50"/>
               </grid>
             </constraints>
             <properties>
-              <toolTipText value="circle2 3"/>
+              <background color="-4473925"/>
+              <enabled value="false"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle2 3"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="34598" class="com.codebin.circle" binding="circle8">
+          <component id="34598" class="com.codebin.Circle" binding="Circle8">
             <constraints>
-              <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+              <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
                 <preferred-size width="50" height="50"/>
                 <maximum-size width="50" height="50"/>
               </grid>
             </constraints>
             <properties>
-              <toolTipText value="circle2 4"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle2 4"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="6202" class="com.codebin.circle" binding="circle12">
+          <component id="6202" class="com.codebin.Circle" binding="Circle12">
             <constraints>
-              <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+              <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
                 <preferred-size width="50" height="50"/>
                 <maximum-size width="50" height="50"/>
               </grid>
             </constraints>
             <properties>
-              <toolTipText value="circle3 4"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle3 4"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="45b0e" class="com.codebin.circle" binding="circle16">
+          <component id="45b0e" class="com.codebin.Circle" binding="Circle16">
             <constraints>
-              <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+              <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
                 <preferred-size width="50" height="50"/>
                 <maximum-size width="50" height="50"/>
               </grid>
             </constraints>
             <properties>
-              <toolTipText value="circle4 4"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle4 4"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="6e120" class="com.codebin.circle" binding="circle20">
+          <component id="6e120" class="com.codebin.Circle" binding="Circle20">
             <constraints>
-              <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+              <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
                 <preferred-size width="50" height="50"/>
                 <maximum-size width="50" height="50"/>
               </grid>
             </constraints>
             <properties>
-              <toolTipText value="circle5 4"/>
+              <foreground color="-4473925"/>
+              <toolTipText value="Circle5 4"/>
+              <visible value="false"/>
             </properties>
           </component>
         </children>
@@ -552,7 +627,10 @@
         <constraints>
           <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-11049372"/>
+          <foreground color="-11049372"/>
+        </properties>
         <border type="none"/>
         <children>
           <tabbedpane id="cb719" binding="tabbedPane1" default-binding="true">
@@ -561,7 +639,12 @@
                 <preferred-size width="200" height="200"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <background color="-720915"/>
+              <font name="Consolas" style="1"/>
+              <foreground color="-16777216"/>
+              <inheritsPopupMenu value="false"/>
+            </properties>
             <border type="none"/>
             <children>
               <grid id="cf018" layout-manager="GridLayoutManager" row-count="6" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
@@ -569,7 +652,10 @@
                 <constraints>
                   <tabbedpane title="Connexion"/>
                 </constraints>
-                <properties/>
+                <properties>
+                  <background color="-7426636"/>
+                  <foreground color="-7426636"/>
+                </properties>
                 <border type="none"/>
                 <children>
                   <component id="edcba" class="javax.swing.JLabel">
@@ -649,17 +735,20 @@
                   </component>
                 </children>
               </grid>
-              <grid id="5bedf" layout-manager="GridLayoutManager" row-count="5" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+              <grid id="5bedf" layout-manager="GridLayoutManager" row-count="4" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="0" left="0" bottom="0" right="0"/>
                 <constraints>
                   <tabbedpane title="Mode de jeu"/>
                 </constraints>
-                <properties/>
+                <properties>
+                  <background color="-7426636"/>
+                  <foreground color="-7426636"/>
+                </properties>
                 <border type="none"/>
                 <children>
                   <vspacer id="7fa8e">
                     <constraints>
-                      <grid row="4" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                      <grid row="3" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
                     </constraints>
                   </vspacer>
                   <component id="83688" class="javax.swing.JComboBox" binding="comboBoxChoix">
@@ -683,20 +772,12 @@
                       <text value="Envoyer"/>
                     </properties>
                   </component>
-                  <component id="a2448" class="javax.swing.JButton" binding="sauvegarderMaPartieButton" default-binding="true">
-                    <constraints>
-                      <grid row="3" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-                    </constraints>
-                    <properties>
-                      <text value="Sauvegarder ma partie"/>
-                    </properties>
-                  </component>
                   <component id="90a7" class="javax.swing.JLabel" binding="labelDiff">
                     <constraints>
                       <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
-                      <text value="Difficulté du mode classique (1-6) :"/>
+                      <text value="Difficulté du mode classique (4-10) :"/>
                       <visible value="false"/>
                     </properties>
                   </component>
@@ -712,12 +793,16 @@
                   </component>
                 </children>
               </grid>
-              <grid id="37316" layout-manager="GridLayoutManager" row-count="3" column-count="10" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+              <grid id="37316" layout-manager="GridLayoutManager" row-count="3" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="0" left="0" bottom="0" right="0"/>
                 <constraints>
                   <tabbedpane title="Mastermind"/>
                 </constraints>
-                <properties/>
+                <properties>
+                  <background color="-7426636"/>
+                  <focusCycleRoot value="false"/>
+                  <foreground color="-3606807"/>
+                </properties>
                 <border type="none"/>
                 <children>
                   <vspacer id="5ccc2">
@@ -725,94 +810,56 @@
                       <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
                     </constraints>
                   </vspacer>
-                  <component id="d522c" class="com.codebin.littlecircle" binding="littlecircle90">
-                    <constraints>
-                      <grid row="0" column="9" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
-                        <minimum-size width="25" height="25"/>
-                      </grid>
-                    </constraints>
-                    <properties>
-                      <background color="-16777216"/>
-                    </properties>
-                  </component>
-                  <component id="b1dd2" class="com.codebin.littlecircle" binding="littlecircle5" default-binding="true">
-                    <constraints>
-                      <grid row="0" column="7" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
-                        <minimum-size width="25" height="25"/>
-                      </grid>
-                    </constraints>
-                    <properties/>
-                  </component>
-                  <component id="b9f52" class="com.codebin.littlecircle" binding="littlecircle13" default-binding="true">
-                    <constraints>
-                      <grid row="0" column="8" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
-                        <minimum-size width="25" height="25"/>
-                      </grid>
-                    </constraints>
-                    <properties/>
-                  </component>
-                  <component id="7ab20" class="com.codebin.littlecircle" binding="littlecircle14" default-binding="true">
-                    <constraints>
-                      <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
-                        <minimum-size width="25" height="25"/>
-                      </grid>
-                    </constraints>
-                    <properties/>
-                  </component>
-                  <component id="73788" class="com.codebin.littlecircle" binding="littlecircle15" default-binding="true">
-                    <constraints>
-                      <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
-                        <minimum-size width="25" height="25"/>
-                      </grid>
-                    </constraints>
-                    <properties/>
-                  </component>
-                  <component id="d14cf" class="com.codebin.littlecircle" binding="littlecircle16" default-binding="true">
-                    <constraints>
-                      <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
-                        <minimum-size width="25" height="25"/>
-                      </grid>
-                    </constraints>
-                    <properties/>
-                  </component>
-                  <component id="5521d" class="com.codebin.littlecircle" binding="littlecircle4">
+                  <component id="5521d" class="com.codebin.LittleCircle" binding="LittleCircle4">
                     <constraints>
                       <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
                         <minimum-size width="25" height="25"/>
                       </grid>
                     </constraints>
-                    <properties/>
+                    <properties>
+                      <background color="-4473925"/>
+                      <foreground color="-4473925"/>
+                    </properties>
                   </component>
-                  <component id="1c771" class="com.codebin.littlecircle" binding="littlecircle3">
+                  <component id="1c771" class="com.codebin.LittleCircle" binding="LittleCircle3">
                     <constraints>
                       <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
                         <minimum-size width="25" height="25"/>
                       </grid>
                     </constraints>
-                    <properties/>
+                    <properties>
+                      <background color="-4473925"/>
+                      <foreground color="-4473925"/>
+                    </properties>
                   </component>
-                  <component id="87af1" class="com.codebin.littlecircle" binding="littlecircle2">
+                  <component id="87af1" class="com.codebin.LittleCircle" binding="LittleCircle2">
                     <constraints>
                       <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
                         <minimum-size width="25" height="25"/>
                       </grid>
                     </constraints>
-                    <properties/>
+                    <properties>
+                      <background color="-4473925"/>
+                      <foreground color="-4473925"/>
+                    </properties>
                   </component>
-                  <component id="bb671" class="com.codebin.littlecircle" binding="littlecircle1">
+                  <component id="bb671" class="com.codebin.LittleCircle" binding="LittleCircle1">
                     <constraints>
                       <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
                         <minimum-size width="25" height="25"/>
                       </grid>
                     </constraints>
-                    <properties/>
+                    <properties>
+                      <background color="-4473925"/>
+                      <foreground color="-4473925"/>
+                    </properties>
                   </component>
                   <component id="54135" class="javax.swing.JButton" binding="button1" default-binding="true">
                     <constraints>
-                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <grid row="1" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
-                      <text value="Button"/>
+                      <text value="Envoyer Mastermind"/>
                     </properties>
                   </component>
                 </children>
@@ -824,7 +871,10 @@
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
-            <properties/>
+            <properties>
+              <background color="-11049372"/>
+              <foreground color="-11049372"/>
+            </properties>
             <border type="none"/>
             <children>
               <component id="ebba0" class="javax.swing.JTextArea" binding="textArea1" default-binding="true">
@@ -833,7 +883,11 @@
                     <preferred-size width="150" height="50"/>
                   </grid>
                 </constraints>
-                <properties/>
+                <properties>
+                  <background color="-16777216"/>
+                  <font name="Consolas"/>
+                  <foreground color="-5658199"/>
+                </properties>
               </component>
             </children>
           </grid>

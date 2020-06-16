@@ -9,13 +9,13 @@ public class Main {
 
 
 
-        mastermindgui mgui = new mastermindgui();
+        Mastermindgui mgui = new Mastermindgui();
 
         JFrame frame = new JFrame("Mastermind");
         frame.setContentPane(mgui.panel1());
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
-        frame.setSize(1350,700);
+        frame.setSize(700,700);
         frame.setLocationRelativeTo(null);
 
         String monAdresseIP;
@@ -24,18 +24,18 @@ public class Main {
         ArrayList<String> couleur = new ArrayList<>();
         couleur = mgui.getCouleur();
 
-        ArrayList<circle> l1 = new ArrayList<>();
-        ArrayList<circle> l2 = new ArrayList<>();
-        ArrayList<circle> l3 = new ArrayList<>();
-        ArrayList<circle> l4 = new ArrayList<>();
-        ArrayList<circle> l5 = new ArrayList<>();
-        ArrayList<circle> l6 = new ArrayList<>();
-        ArrayList<circle> l7 = new ArrayList<>();
-        ArrayList<circle> l8 = new ArrayList<>();
-        ArrayList<circle> l9 = new ArrayList<>();
-        ArrayList<circle> l10 = new ArrayList<>();
+        ArrayList<Circle> l1 = new ArrayList<>();
+        ArrayList<Circle> l2 = new ArrayList<>();
+        ArrayList<Circle> l3 = new ArrayList<>();
+        ArrayList<Circle> l4 = new ArrayList<>();
+        ArrayList<Circle> l5 = new ArrayList<>();
+        ArrayList<Circle> l6 = new ArrayList<>();
+        ArrayList<Circle> l7 = new ArrayList<>();
+        ArrayList<Circle> l8 = new ArrayList<>();
+        ArrayList<Circle> l9 = new ArrayList<>();
+        ArrayList<Circle> l10 = new ArrayList<>();
 
-        ArrayList<ArrayList<circle>> lignesC = new ArrayList<>();
+        ArrayList<ArrayList<Circle>> lignesC = new ArrayList<>();
 
         for (int i = 0; i < 10; i++) {
             switch (i) {
@@ -117,10 +117,8 @@ public class Main {
 
             int retour = 0;
             retour  = mgui.getInfoConnexionOk();
-            Thread.sleep(1000);
+            Thread.sleep(500);
             if (retour == 0) {
-
-                System.out.println("merde");
 
 
             } else {
@@ -137,9 +135,9 @@ public class Main {
             }
         }
 
-        //UIManager.setLookAndFeel("com.sun.java.swing.plaf.motif.MotifLookAndFeel");
+        UIManager.setLookAndFeel("com.sun.java.swing.plaf.motif.MotifLookAndFeel");
 
-        Utility u = new Utility(mgui.getLittlecircle1(), mgui.getLittlecircle2(), mgui.getLittlecircle3(), mgui.getLittlecircle4(), mgui.getTextArea1());
+        Utility u = new Utility(mgui.getLittleCircle1(), mgui.getLittleCircle2(), mgui.getLittleCircle3(), mgui.getLittleCircle4(), mgui.getTextArea1());
         IOCommand command = new IOCommand(u);
 
         boolean connexion = command.connexion(monAdresseIP, monPort);
@@ -158,7 +156,7 @@ public class Main {
 
         mgui.afficherElementsPseudo();
 
-        mgui.writeTextArea1("Quel est ton login ?");
+        mgui.writeTextArea1("Quel est ton pseudo ?");
 
         while(true){
 
@@ -170,7 +168,7 @@ public class Main {
 
             System.out.println(verifieChaine);
             
-            Thread.sleep(1000);
+            Thread.sleep(500);
             if ((r != 0) && (!verifieChaine.equals(""))) {
 
                monPseudo = mgui.getTextPseudo();
@@ -181,7 +179,7 @@ public class Main {
             }
         }
 
-        command.ecrireEcran("Quel est ton login ?");
+        //command.ecrireEcran("Quel est ton login ?");
 
         //command.ecrireReseau(command.lireEcran(""));
         command.ecrireReseau(monPseudo);
@@ -204,31 +202,43 @@ public class Main {
             //choix = command.lireEcran("");
 
            menuChoix = mgui.getChoixCombo();
-            System.out.println(menuChoix);
+           System.out.println(menuChoix);
+
 
           // if(choix.equals("2"))
             if (menuChoix == 1) {
 
                 mgui.afficherElementsDifficulte();
 
-                System.out.print(menuChoix);
-                System.out.print("nique ta mère");
 
                 while(mgui.getInfoChoixDiffClicked() == 0) Thread.sleep(1000);
 
                 //str = command.lireEcran("Quel niveaux de difficultés voulez-vous ?");
 
+                mgui.afficherCercle();
+
                 str = new String(String.valueOf(mgui.getChoixDifficulte()));
-                System.out.println(str);
+
 
                 difficulty = Integer.parseInt(str);
                 //System.out.println(str);
                 command.ecrireReseau("!1 " + str);
                 tour = 0;
 
+                mgui.writeTextArea1("Go!");
+
                 while (true) {
-                    if (u.getWin()) break;
-                    if (u.getLoose()) break;
+                    if (u.getWin())
+                    {
+                        mgui.reinitialiserColorCercle();
+                        mgui.writeTextArea1("Rejoue!");
+                        break;}
+                    if (u.getLoose())
+                    {
+                        mgui.reinitialiserColorCercle();
+                        mgui.writeTextArea1("Rejoue!");
+                        break;
+                    }
                     command.ecrireEcran("Choisir une combinaison");
                     str = "";
 
@@ -256,6 +266,7 @@ public class Main {
             } else if (menuChoix == 2) {
 
                 System.out.println("pas de mode compétition");
+                mgui.writeTextArea1("Pas encore de mode compétition");
 
             //} else if (choix.equals("3")) {
             } else if (menuChoix == 3) {
