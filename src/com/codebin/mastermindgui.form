@@ -16,7 +16,7 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="c7fc9" class="com.codebin.circle">
+          <component id="c7fc9" class="com.codebin.circle" binding="circle1">
             <constraints>
               <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -31,7 +31,7 @@
               <toolTipText value="circle1 1"/>
             </properties>
           </component>
-          <component id="efc7c" class="com.codebin.circle">
+          <component id="efc7c" class="com.codebin.circle" binding="circle25">
             <constraints>
               <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -45,7 +45,7 @@
               <toolTipText value="circle7 1"/>
             </properties>
           </component>
-          <component id="59cd9" class="com.codebin.circle">
+          <component id="59cd9" class="com.codebin.circle" binding="circle21">
             <constraints>
               <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -59,7 +59,7 @@
               <toolTipText value="circle6 1"/>
             </properties>
           </component>
-          <component id="83aed" class="com.codebin.circle" binding="circle12">
+          <component id="83aed" class="com.codebin.circle" binding="circle38">
             <constraints>
               <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -73,7 +73,7 @@
               <toolTipText value="circle10 2"/>
             </properties>
           </component>
-          <component id="b55ff" class="com.codebin.circle" binding="circle13">
+          <component id="b55ff" class="com.codebin.circle" binding="circle39">
             <constraints>
               <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -84,10 +84,10 @@
             <properties>
               <background color="-16777216"/>
               <foreground color="-16777216"/>
-              <toolTipText value="circle10 13"/>
+              <toolTipText value="circle10 3"/>
             </properties>
           </component>
-          <component id="8fc04" class="com.codebin.circle" binding="circle14">
+          <component id="8fc04" class="com.codebin.circle" binding="circle40">
             <constraints>
               <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -101,7 +101,7 @@
               <toolTipText value="circle10 4"/>
             </properties>
           </component>
-          <component id="ffea2" class="com.codebin.circle">
+          <component id="ffea2" class="com.codebin.circle" binding="circle29">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -115,7 +115,7 @@
               <toolTipText value="circle8 1"/>
             </properties>
           </component>
-          <component id="168b2" class="com.codebin.circle">
+          <component id="168b2" class="com.codebin.circle" binding="circle33">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -129,7 +129,7 @@
               <toolTipText value="circle9 1"/>
             </properties>
           </component>
-          <component id="c1924" class="com.codebin.circle">
+          <component id="c1924" class="com.codebin.circle" binding="circle34">
             <constraints>
               <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -143,7 +143,7 @@
               <toolTipText value="circle9 2"/>
             </properties>
           </component>
-          <component id="82e6f" class="com.codebin.circle">
+          <component id="82e6f" class="com.codebin.circle" binding="circle35">
             <constraints>
               <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -157,7 +157,7 @@
               <toolTipText value="circle9 3"/>
             </properties>
           </component>
-          <component id="a2735" class="com.codebin.circle">
+          <component id="a2735" class="com.codebin.circle" binding="circle36">
             <constraints>
               <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -171,7 +171,7 @@
               <toolTipText value="circle9 4"/>
             </properties>
           </component>
-          <component id="884e2" class="com.codebin.circle">
+          <component id="884e2" class="com.codebin.circle" binding="circle32">
             <constraints>
               <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -185,7 +185,7 @@
               <toolTipText value="circle8 4"/>
             </properties>
           </component>
-          <component id="2a11a" class="com.codebin.circle">
+          <component id="2a11a" class="com.codebin.circle" binding="circle31">
             <constraints>
               <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -199,7 +199,7 @@
               <toolTipText value="circle8 3"/>
             </properties>
           </component>
-          <component id="9760d" class="com.codebin.circle">
+          <component id="9760d" class="com.codebin.circle" binding="circle30">
             <constraints>
               <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -213,7 +213,7 @@
               <toolTipText value="circle8 2"/>
             </properties>
           </component>
-          <component id="80164" class="com.codebin.circle">
+          <component id="80164" class="com.codebin.circle" binding="circle26">
             <constraints>
               <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -227,7 +227,7 @@
               <toolTipText value="circle7 2"/>
             </properties>
           </component>
-          <component id="6a5c4" class="com.codebin.circle">
+          <component id="6a5c4" class="com.codebin.circle" binding="circle27">
             <constraints>
               <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -241,7 +241,7 @@
               <toolTipText value="circle7 3"/>
             </properties>
           </component>
-          <component id="c57bd" class="com.codebin.circle">
+          <component id="c57bd" class="com.codebin.circle" binding="circle28">
             <constraints>
               <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -255,7 +255,7 @@
               <toolTipText value="circle7 4"/>
             </properties>
           </component>
-          <component id="a4e80" class="com.codebin.circle">
+          <component id="a4e80" class="com.codebin.circle" binding="circle22">
             <constraints>
               <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -269,7 +269,7 @@
               <toolTipText value="circle6 2"/>
             </properties>
           </component>
-          <component id="f80e6" class="com.codebin.circle">
+          <component id="f80e6" class="com.codebin.circle" binding="circle23">
             <constraints>
               <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -283,7 +283,7 @@
               <toolTipText value="circle6 3"/>
             </properties>
           </component>
-          <component id="e558b" class="com.codebin.circle">
+          <component id="e558b" class="com.codebin.circle" binding="circle24">
             <constraints>
               <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -297,7 +297,7 @@
               <toolTipText value="circle6 2"/>
             </properties>
           </component>
-          <component id="7894f" class="com.codebin.circle">
+          <component id="7894f" class="com.codebin.circle" binding="circle4">
             <constraints>
               <grid row="9" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -311,7 +311,7 @@
               <toolTipText value="circle1 4"/>
             </properties>
           </component>
-          <component id="b7b07" class="com.codebin.circle">
+          <component id="b7b07" class="com.codebin.circle" binding="circle3">
             <constraints>
               <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -325,7 +325,7 @@
               <toolTipText value="circle1 3"/>
             </properties>
           </component>
-          <component id="949d" class="com.codebin.circle">
+          <component id="949d" class="com.codebin.circle" binding="circle2">
             <constraints>
               <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -339,7 +339,7 @@
               <toolTipText value="circle1 2"/>
             </properties>
           </component>
-          <component id="5a792" class="com.codebin.circle" binding="circle11">
+          <component id="5a792" class="com.codebin.circle" binding="circle37">
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -353,7 +353,7 @@
               <toolTipText value="circle10 1"/>
             </properties>
           </component>
-          <component id="51fb" class="com.codebin.circle">
+          <component id="51fb" class="com.codebin.circle" binding="circle17">
             <constraints>
               <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -365,7 +365,7 @@
               <toolTipText value="circle5 1"/>
             </properties>
           </component>
-          <component id="e4ca3" class="com.codebin.circle">
+          <component id="e4ca3" class="com.codebin.circle" binding="circle9">
             <constraints>
               <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -377,7 +377,7 @@
               <toolTipText value="circle3 1"/>
             </properties>
           </component>
-          <component id="58c3f" class="com.codebin.circle">
+          <component id="58c3f" class="com.codebin.circle" binding="circle13">
             <constraints>
               <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -389,7 +389,7 @@
               <toolTipText value="circle4 1"/>
             </properties>
           </component>
-          <component id="34ee0" class="com.codebin.circle">
+          <component id="34ee0" class="com.codebin.circle" binding="circle5">
             <constraints>
               <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -401,7 +401,7 @@
               <toolTipText value="circle2 1"/>
             </properties>
           </component>
-          <component id="f8a24" class="com.codebin.circle">
+          <component id="f8a24" class="com.codebin.circle" binding="circle18">
             <constraints>
               <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -413,7 +413,7 @@
               <toolTipText value="circle5 2"/>
             </properties>
           </component>
-          <component id="d0af2" class="com.codebin.circle">
+          <component id="d0af2" class="com.codebin.circle" binding="circle14">
             <constraints>
               <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -425,7 +425,7 @@
               <toolTipText value="circle4 2"/>
             </properties>
           </component>
-          <component id="9a2f3" class="com.codebin.circle">
+          <component id="9a2f3" class="com.codebin.circle" binding="circle10">
             <constraints>
               <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -437,7 +437,7 @@
               <toolTipText value="circle3 2"/>
             </properties>
           </component>
-          <component id="e3ca0" class="com.codebin.circle">
+          <component id="e3ca0" class="com.codebin.circle" binding="circle6">
             <constraints>
               <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -449,7 +449,7 @@
               <toolTipText value="circle2 2"/>
             </properties>
           </component>
-          <component id="92986" class="com.codebin.circle">
+          <component id="92986" class="com.codebin.circle" binding="circle19">
             <constraints>
               <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -461,7 +461,7 @@
               <toolTipText value="circle5 3"/>
             </properties>
           </component>
-          <component id="c2e27" class="com.codebin.circle">
+          <component id="c2e27" class="com.codebin.circle" binding="circle15">
             <constraints>
               <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -473,7 +473,7 @@
               <toolTipText value="circle4 3"/>
             </properties>
           </component>
-          <component id="838f" class="com.codebin.circle">
+          <component id="838f" class="com.codebin.circle" binding="circle11">
             <constraints>
               <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -485,7 +485,7 @@
               <toolTipText value="circle3 3"/>
             </properties>
           </component>
-          <component id="e9486" class="com.codebin.circle">
+          <component id="e9486" class="com.codebin.circle" binding="circle7">
             <constraints>
               <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -497,7 +497,7 @@
               <toolTipText value="circle2 3"/>
             </properties>
           </component>
-          <component id="34598" class="com.codebin.circle">
+          <component id="34598" class="com.codebin.circle" binding="circle8">
             <constraints>
               <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -509,7 +509,7 @@
               <toolTipText value="circle2 4"/>
             </properties>
           </component>
-          <component id="6202" class="com.codebin.circle">
+          <component id="6202" class="com.codebin.circle" binding="circle12">
             <constraints>
               <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -521,7 +521,7 @@
               <toolTipText value="circle3 4"/>
             </properties>
           </component>
-          <component id="45b0e" class="com.codebin.circle">
+          <component id="45b0e" class="com.codebin.circle" binding="circle16">
             <constraints>
               <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
@@ -533,7 +533,7 @@
               <toolTipText value="circle4 4"/>
             </properties>
           </component>
-          <component id="6e120" class="com.codebin.circle">
+          <component id="6e120" class="com.codebin.circle" binding="circle20">
             <constraints>
               <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>

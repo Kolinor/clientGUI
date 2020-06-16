@@ -21,7 +21,93 @@ public class Main {
         String monAdresseIP;
         int monPort ;
         String monPseudo =null;
+        ArrayList<circle> l1 = new ArrayList<>();
+        ArrayList<circle> l2 = new ArrayList<>();
+        ArrayList<circle> l3 = new ArrayList<>();
+        ArrayList<circle> l4 = new ArrayList<>();
+        ArrayList<circle> l5 = new ArrayList<>();
+        ArrayList<circle> l6 = new ArrayList<>();
+        ArrayList<circle> l7 = new ArrayList<>();
+        ArrayList<circle> l8 = new ArrayList<>();
+        ArrayList<circle> l9 = new ArrayList<>();
+        ArrayList<circle> l10 = new ArrayList<>();
 
+        ArrayList<ArrayList<circle>> lignesC = new ArrayList<>();
+
+        for (int i = 0; i < 10; i++) {
+            switch (i) {
+                case 0:
+                    l1.add(mgui.getCircle1());
+                    l1.add(mgui.getCircle2());
+                    l1.add(mgui.getCircle3());
+                    l1.add(mgui.getCircle4());
+                    lignesC.add(l1);
+                    break;
+                case 1:
+                    l2.add(mgui.getCircle5());
+                    l2.add(mgui.getCircle6());
+                    l2.add(mgui.getCircle7());
+                    l2.add(mgui.getCircle8());
+                    lignesC.add(l2);
+                    break;
+                case 2:
+                    l3.add(mgui.getCircle9());
+                    l3.add(mgui.getCircle10());
+                    l3.add(mgui.getCircle11());
+                    l3.add(mgui.getCircle12());
+                    lignesC.add(l3);
+                        break;
+                case 3:
+                    l4.add(mgui.getCircle13());
+                    l4.add(mgui.getCircle14());
+                    l4.add(mgui.getCircle15());
+                    l4.add(mgui.getCircle16());
+                    lignesC.add(l4);
+                    break;
+                case 4:
+                    l5.add(mgui.getCircle17());
+                    l5.add(mgui.getCircle18());
+                    l5.add(mgui.getCircle19());
+                    l5.add(mgui.getCircle20());
+                    lignesC.add(l5);
+                    break;
+                case 5:
+                    l6.add(mgui.getCircle21());
+                    l6.add(mgui.getCircle22());
+                    l6.add(mgui.getCircle23());
+                    l6.add(mgui.getCircle24());
+                    lignesC.add(l6);
+                    break;
+                case 6:
+                    l7.add(mgui.getCircle25());
+                    l7.add(mgui.getCircle26());
+                    l7.add(mgui.getCircle27());
+                    l7.add(mgui.getCircle28());
+                    lignesC.add(l7);
+                    break;
+                case 7:
+                    l8.add(mgui.getCircle29());
+                    l8.add(mgui.getCircle30());
+                    l8.add(mgui.getCircle31());
+                    l8.add(mgui.getCircle32());
+                    lignesC.add(l8);
+                    break;
+                case 8:
+                    l9.add(mgui.getCircle33());
+                    l9.add(mgui.getCircle34());
+                    l9.add(mgui.getCircle35());
+                    l9.add(mgui.getCircle36());
+                    lignesC.add(l9);
+                    break;
+                case 9:
+                    l10.add(mgui.getCircle37());
+                    l10.add(mgui.getCircle38());
+                    l10.add(mgui.getCircle39());
+                    l10.add(mgui.getCircle40());
+                    lignesC.add(l10);
+                    break;
+            }
+        }
 
         while(true) {
 
@@ -50,21 +136,10 @@ public class Main {
 
         //UIManager.setLookAndFeel("com.sun.java.swing.plaf.motif.MotifLookAndFeel");
 
-
         Utility u = new Utility();
         IOCommand command = new IOCommand(u);
 
-
-
-
-
         boolean connexion = command.connexion(monAdresseIP, monPort);
-
-
-
-
-
-
 
         //UIManager.setLookAndFeel(javax.swing.plaf.metal.MetalLookAndFeel);
 
@@ -77,9 +152,6 @@ public class Main {
         int menuChoix;
         int difficulty;
         int select;
-
-
-
 
         mgui.afficherElementsPseudo();
 
@@ -104,23 +176,9 @@ public class Main {
 
                break;
             }
-
-
-
-
-            }
-
-
-
-
-
-
-
-
+        }
 
         command.ecrireEcran("Quel est ton login ?");
-
-
 
         //command.ecrireReseau(command.lireEcran(""));
         command.ecrireReseau(monPseudo);
@@ -162,7 +220,7 @@ public class Main {
                     if (u.getWin()) break;
                     if (u.getLoose()) break;
                     command.ecrireEcran("Choisir une combinaison");
-                    u.couleurDisponible();
+//                    u.couleurDisponible();
                     str = command.lireEcran("Rentrer une combinaison de " + difficulty + " couleurs ou 'quit'");
                     if (str.equals("quit")) {
                         command.ecrireReseau("stop");
