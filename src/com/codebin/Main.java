@@ -6,14 +6,8 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) throws IOException, InterruptedException, ClassNotFoundException, UnsupportedLookAndFeelException, InstantiationException, IllegalAccessException {
-        Utility u = new Utility();
-        IOCommand command = new IOCommand(u);
-
-        boolean connexion = command.connexion("192.168.1.25", 6002);
 
 
-
-        //UIManager.setLookAndFeel("com.sun.java.swing.plaf.motif.MotifLookAndFeel");
 
         mastermindgui mgui = new mastermindgui();
 
@@ -24,7 +18,52 @@ public class Main {
         frame.setSize(1350,700);
         frame.setLocationRelativeTo(null);
 
-        mgui.writeTextArea1("str");
+        String monAdresseIP;
+        int monPort ;
+        String monPseudo =null;
+
+
+        while(true) {
+
+            int retour = 0;
+            retour  = mgui.getInfoConnexionOk();
+            if (retour == 0) {
+
+                System.out.println("merde");
+
+
+            } else {
+                System.out.println("yes");
+                monAdresseIP = mgui.getTextAdresseIP();
+                monPort = Integer.parseInt(mgui.getTextPort());
+                System.out.println(monPort);
+                System.out.println(monAdresseIP);
+                mgui.writeTextArea1("Connexion réussie");
+                mgui.writeTextArea1("Adresse IP : " + monAdresseIP + " Port : " + monPort);
+
+                break;
+
+            }
+        }
+
+        //UIManager.setLookAndFeel("com.sun.java.swing.plaf.motif.MotifLookAndFeel");
+
+
+        Utility u = new Utility();
+        IOCommand command = new IOCommand(u);
+
+
+
+
+
+        boolean connexion = command.connexion(monAdresseIP, monPort);
+
+
+
+
+
+
+
         //UIManager.setLookAndFeel(javax.swing.plaf.metal.MetalLookAndFeel);
 
         // c'est un début elle est pas encore terminé
@@ -33,22 +72,80 @@ public class Main {
         command.run();
         String str = "";
         String choix = "";
+        int menuChoix;
         int difficulty;
         int select;
 
+
+
+
+        mgui.afficherElementsPseudo();
+
+        mgui.writeTextArea1("Quel est ton login ?");
+
+        while(true){
+
+            int r =0;
+            String verifieChaine;
+
+            r = mgui.getInfoPseudoOk();
+            verifieChaine = mgui.getTextPseudo();
+
+            System.out.println(verifieChaine);
+            if ((r != 0) && (!verifieChaine.equals(""))) {
+
+               monPseudo = mgui.getTextPseudo();
+               mgui.writeTextArea1("Votre pseudo : " +monPseudo);
+
+
+               break;
+            }
+
+
+
+
+            }
+
+
+
+
+
+
+
+
+
         command.ecrireEcran("Quel est ton login ?");
-        command.ecrireReseau(command.lireEcran(""));
+
+
+
+        //command.ecrireReseau(command.lireEcran(""));
+        command.ecrireReseau(monPseudo);
         Thread.sleep(100);
 
-        do {
-            command.ecrireEcran("Que voulez vous faire ?");
-            command.ecrireEcran("1. Mode classique\n2. Mode compétition\n3. Mode aventure\n5. quit");
-            choix = command.lireEcran("");
+        mgui.writeTextArea1("Tu peux maintenant choisir ton mode de jeu");
 
-            if (choix.equals("1")) {
-                str = command.lireEcran("Quel niveaux de difficultés voulez-vous ?");
+        do {
+
+            //mgui.writeTextArea1("Tu peux maintenant choisir ton mode de jeu");
+            //command.ecrireEcran("Que voulez vous faire ?");
+            //command.ecrireEcran("1. Mode classique\n2. Mode compétition\n3. Mode aventure\n5. quit");
+
+            //choix = command.lireEcran("");
+
+           menuChoix = mgui.getChoixCombo();
+            System.out.println(menuChoix);
+
+          // if(choix.equals("2"))
+            if (menuChoix == 1) {
+
+                System.out.print(menuChoix);
+                System.out.print("nique ta mère");
+
+                //str = command.lireEcran("Quel niveaux de difficultés voulez-vous ?");
+                mgui.afficherElementsDifficulte();
+
                 difficulty = Integer.parseInt(str);
-                System.out.println(str);
+                //System.out.println(str);
                 command.ecrireReseau("!1 " + str);
 
                 while (true) {
@@ -63,9 +160,11 @@ public class Main {
                     }
                     command.ecrireReseau("!1 " + str);
                 }
-            } else if (choix.equals("2")) {
+           // } else if (choix.equals("2")) {
+            } else if (menuChoix == 2) {
 
-            } else if (choix.equals("3")) {
+            //} else if (choix.equals("3")) {
+            } else if (menuChoix == 3) {
                 command.ecrireEcran("Bienvenue dans le mode aventure !");
                 str = command.lireEcran("1. Nouvelle partie\n2. Charger une partie");
                 select = Integer.parseInt(str);
@@ -106,6 +205,8 @@ public class Main {
         } while(!choix.equals("5"));
         command.ecrireReseau("quit");
         command.deconnexion();
+
+
 
     }
 }

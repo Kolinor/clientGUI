@@ -30,19 +30,27 @@ public class mastermindgui extends Container {
     private circle circle13;
     private circle circle14;
     private JTextArea textArea1;
+    private JButton button1;
+    private JTextField textField1;
+    private JTextField textField2;
+    private JButton envoyerInfosButton;
+    private JLabel monPseudo;
+    private JTextField textField3;
+    private JButton boutonPseudo;
+    private JComboBox comboBoxDiff;
+    private JLabel labelDiff;
+    private int choixCombo;
+    private int infoConnexionOk;
+    private int infoPseudoOk;
+    private int choixComboDifficulte;
+
 
 
     HashMap<String, Color> indice = new HashMap<>();
     ArrayList<String> couleur = new ArrayList<>();
     HashMap<String, String> circleColor = new HashMap<>();
 
-    public JPanel panel1() {
-        return panel1;
-    }
 
-    public void writeTextArea1(String str) {
-        textArea1.setText(str);
-    }
 
     public mastermindgui(){
 
@@ -93,17 +101,62 @@ public class mastermindgui extends Container {
                 setColorCircle(circle14);
             }
         });
-        comboBoxChoix.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-            }
-        });
         comboBoxChoix.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
+                String choix1 = "Mode classique";
+                String choix2 = "Mode aventurier";
+                String choix3 = "Mode compétition";
 
-                System.out.println(comboBoxChoix.getSelectedItem());
+                if(comboBoxChoix.getSelectedItem().equals(choix1)){
+                    choixCombo = 1;
+                }else if(comboBoxChoix.getSelectedItem().equals(choix2)){
+                    choixCombo = 2;
+                }else if (comboBoxChoix.getSelectedItem().equals(choix3)){
+
+                    choixCombo = 3;
+
+                };
+            }
+        });
+
+
+        envoyerInfosButton.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                infoConnexionOk++;
+            }
+        });
+        boutonPseudo.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                infoPseudoOk++;
+                System.out.println(infoPseudoOk);
+            }
+        });
+        comboBoxDiff.addItemListener(new ItemListener() {
+            @Override
+            public void itemStateChanged(ItemEvent e) {
+
+                switch (choixComboDifficulte){
+
+                    case(1):
+                    case(6):
+
+                        break;
+                    case(2):
+                        break;
+                    case(3):
+                        break;
+                    case(4):
+                        break;
+                    case(5):
+                        break;
+                    default: System.out.println("ALERTE ALERTE");
+
+                }
+
             }
         });
     }
@@ -112,22 +165,115 @@ public class mastermindgui extends Container {
 
         String color = circleColor.get(c.getToolTipText());
         int i = couleur.indexOf(color);
-        System.out.println(i);
+
         int maxSize = couleur.size();
-        System.out.println(maxSize);
         i++;
-        System.out.println(i);
         if (i == maxSize) i = 0;
         color = couleur.get(i);
+
         circleColor.remove(c.getToolTipText());
         circleColor.put(c.getToolTipText(), color);
 
         c.setForeground(this.indice.get(color));
 
+        System.out.println(color);
+
     }
+
+
+
+
 
     public void ecrire (String t){
         textArea1.setText(t);
 
     }
+
+    public int getChoixCombo(){
+
+
+        return choixCombo;
+
+
+    }
+
+    public void removeTextArea1() {
+        textArea1.removeAll();
+    }
+
+
+    public JPanel panel1() {
+        return panel1;
+    }
+
+    public void writeTextArea1(String str) {
+        textArea1.append(" - " + str +"\n");
+
+    }
+
+    public String getTextAdresseIP(){
+
+        return textField1.getText();
+
+
+    }
+    public String getTextPort(){
+
+        return textField2.getText();
+    }
+
+
+    public int getInfoConnexionOk(){
+
+        return infoConnexionOk;
+
+
+
+    }
+
+    public String getTextPseudo(){
+
+        return textField3.getText();
+
+    }
+    public void afficherElementsPseudo(){
+
+        textField3.setVisible(true);
+        boutonPseudo.setVisible(true);
+        monPseudo.setVisible(true);
+
+    }
+
+    public void afficherElementsDifficulte(){
+
+        labelDiff.setVisible(true);
+        comboBoxDiff.setVisible(true);
+
+
+    }
+
+    public int getInfoPseudoOk(){
+
+        return infoPseudoOk;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
