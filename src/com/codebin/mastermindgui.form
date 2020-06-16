@@ -8,7 +8,7 @@
     <properties/>
     <border type="none"/>
     <children>
-      <grid id="5808c" layout-manager="GridLayoutManager" row-count="6" column-count="10" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="5808c" layout-manager="GridLayoutManager" row-count="10" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
@@ -18,7 +18,7 @@
         <children>
           <component id="c7fc9" class="com.codebin.circle">
             <constraints>
-              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
+              <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
                 <preferred-size width="50" height="50"/>
                 <maximum-size width="50" height="50"/>
@@ -28,19 +28,6 @@
               <background color="-16777216"/>
               <foreground color="-16777216"/>
               <opaque value="false"/>
-            </properties>
-          </component>
-          <component id="c68d1" class="com.codebin.circle">
-            <constraints>
-              <grid row="0" column="9" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
             </properties>
           </component>
           <component id="efc7c" class="com.codebin.circle">
@@ -111,71 +98,6 @@
               <toolTipText value="circle14"/>
             </properties>
           </component>
-          <component id="d8c77" class="com.codebin.circle">
-            <constraints>
-              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
-            </properties>
-          </component>
-          <component id="cc53e" class="com.codebin.circle">
-            <constraints>
-              <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
-            </properties>
-          </component>
-          <component id="cde3f" class="com.codebin.circle">
-            <constraints>
-              <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
-            </properties>
-          </component>
-          <component id="8d53f" class="com.codebin.circle">
-            <constraints>
-              <grid row="0" column="7" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
-            </properties>
-          </component>
-          <component id="33ae6" class="com.codebin.circle">
-            <constraints>
-              <grid row="0" column="8" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
-            </properties>
-          </component>
           <component id="ffea2" class="com.codebin.circle">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
@@ -231,162 +153,6 @@
           <component id="a2735" class="com.codebin.circle">
             <constraints>
               <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
-            </properties>
-          </component>
-          <component id="2ef72" class="com.codebin.circle">
-            <constraints>
-              <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
-            </properties>
-          </component>
-          <component id="9ba7a" class="com.codebin.circle">
-            <constraints>
-              <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
-            </properties>
-          </component>
-          <component id="e3175" class="com.codebin.circle">
-            <constraints>
-              <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
-            </properties>
-          </component>
-          <component id="f529f" class="com.codebin.circle">
-            <constraints>
-              <grid row="1" column="7" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
-            </properties>
-          </component>
-          <component id="72c5d" class="com.codebin.circle">
-            <constraints>
-              <grid row="1" column="8" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
-            </properties>
-          </component>
-          <component id="46ac5" class="com.codebin.circle">
-            <constraints>
-              <grid row="1" column="9" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
-            </properties>
-          </component>
-          <component id="bce9e" class="com.codebin.circle">
-            <constraints>
-              <grid row="2" column="9" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
-            </properties>
-          </component>
-          <component id="2ef35" class="com.codebin.circle">
-            <constraints>
-              <grid row="2" column="8" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
-            </properties>
-          </component>
-          <component id="471ca" class="com.codebin.circle">
-            <constraints>
-              <grid row="2" column="7" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
-            </properties>
-          </component>
-          <component id="16a69" class="com.codebin.circle">
-            <constraints>
-              <grid row="2" column="6" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
-            </properties>
-          </component>
-          <component id="3f617" class="com.codebin.circle">
-            <constraints>
-              <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
-            </properties>
-          </component>
-          <component id="22261" class="com.codebin.circle">
-            <constraints>
-              <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
                 <preferred-size width="50" height="50"/>
                 <maximum-size width="50" height="50"/>
@@ -475,84 +241,6 @@
               <foreground color="-16777216"/>
             </properties>
           </component>
-          <component id="61484" class="com.codebin.circle">
-            <constraints>
-              <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
-            </properties>
-          </component>
-          <component id="c71a4" class="com.codebin.circle">
-            <constraints>
-              <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
-            </properties>
-          </component>
-          <component id="f5590" class="com.codebin.circle">
-            <constraints>
-              <grid row="3" column="6" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
-            </properties>
-          </component>
-          <component id="4f0e4" class="com.codebin.circle">
-            <constraints>
-              <grid row="3" column="7" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
-            </properties>
-          </component>
-          <component id="cbc9f" class="com.codebin.circle">
-            <constraints>
-              <grid row="3" column="8" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
-            </properties>
-          </component>
-          <component id="bf8e" class="com.codebin.circle">
-            <constraints>
-              <grid row="3" column="9" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
-            </properties>
-          </component>
           <component id="a4e80" class="com.codebin.circle">
             <constraints>
               <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
@@ -592,165 +280,9 @@
               <foreground color="-16777216"/>
             </properties>
           </component>
-          <component id="3bf41" class="com.codebin.circle">
-            <constraints>
-              <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
-            </properties>
-          </component>
-          <component id="98623" class="com.codebin.circle">
-            <constraints>
-              <grid row="4" column="9" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
-            </properties>
-          </component>
-          <component id="12ae1" class="com.codebin.circle">
-            <constraints>
-              <grid row="4" column="8" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
-            </properties>
-          </component>
-          <component id="97d1d" class="com.codebin.circle">
-            <constraints>
-              <grid row="4" column="7" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
-            </properties>
-          </component>
-          <component id="28e1b" class="com.codebin.circle">
-            <constraints>
-              <grid row="4" column="6" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
-            </properties>
-          </component>
-          <component id="2f5e6" class="com.codebin.circle">
-            <constraints>
-              <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
-            </properties>
-          </component>
-          <component id="cab99" class="com.codebin.circle">
-            <constraints>
-              <grid row="5" column="9" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
-            </properties>
-          </component>
-          <component id="e8445" class="com.codebin.circle">
-            <constraints>
-              <grid row="5" column="8" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
-            </properties>
-          </component>
-          <component id="ad042" class="com.codebin.circle">
-            <constraints>
-              <grid row="5" column="7" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
-            </properties>
-          </component>
-          <component id="e4a06" class="com.codebin.circle">
-            <constraints>
-              <grid row="5" column="6" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
-            </properties>
-          </component>
-          <component id="77f73" class="com.codebin.circle">
-            <constraints>
-              <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
-            </properties>
-          </component>
-          <component id="2af89" class="com.codebin.circle">
-            <constraints>
-              <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="50" height="50"/>
-                <preferred-size width="50" height="50"/>
-                <maximum-size width="50" height="50"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-16777216"/>
-              <foreground color="-16777216"/>
-            </properties>
-          </component>
           <component id="7894f" class="com.codebin.circle">
             <constraints>
-              <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
+              <grid row="9" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
                 <preferred-size width="50" height="50"/>
                 <maximum-size width="50" height="50"/>
@@ -763,7 +295,7 @@
           </component>
           <component id="b7b07" class="com.codebin.circle">
             <constraints>
-              <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
+              <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
                 <preferred-size width="50" height="50"/>
                 <maximum-size width="50" height="50"/>
@@ -776,7 +308,7 @@
           </component>
           <component id="949d" class="com.codebin.circle">
             <constraints>
-              <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
+              <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="50"/>
                 <preferred-size width="50" height="50"/>
                 <maximum-size width="50" height="50"/>
@@ -800,6 +332,166 @@
               <foreground color="-16777216"/>
               <toolTipText value="circle11"/>
             </properties>
+          </component>
+          <component id="51fb" class="com.codebin.circle">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="50" height="50"/>
+                <preferred-size width="50" height="50"/>
+                <maximum-size width="50" height="50"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="e4ca3" class="com.codebin.circle">
+            <constraints>
+              <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="50" height="50"/>
+                <preferred-size width="50" height="50"/>
+                <maximum-size width="50" height="50"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="58c3f" class="com.codebin.circle">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="50" height="50"/>
+                <preferred-size width="50" height="50"/>
+                <maximum-size width="50" height="50"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="34ee0" class="com.codebin.circle">
+            <constraints>
+              <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="50" height="50"/>
+                <preferred-size width="50" height="50"/>
+                <maximum-size width="50" height="50"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="f8a24" class="com.codebin.circle">
+            <constraints>
+              <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="50" height="50"/>
+                <preferred-size width="50" height="50"/>
+                <maximum-size width="50" height="50"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="d0af2" class="com.codebin.circle">
+            <constraints>
+              <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="50" height="50"/>
+                <preferred-size width="50" height="50"/>
+                <maximum-size width="50" height="50"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="9a2f3" class="com.codebin.circle">
+            <constraints>
+              <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="50" height="50"/>
+                <preferred-size width="50" height="50"/>
+                <maximum-size width="50" height="50"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="e3ca0" class="com.codebin.circle">
+            <constraints>
+              <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="50" height="50"/>
+                <preferred-size width="50" height="50"/>
+                <maximum-size width="50" height="50"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="92986" class="com.codebin.circle">
+            <constraints>
+              <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="50" height="50"/>
+                <preferred-size width="50" height="50"/>
+                <maximum-size width="50" height="50"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="c2e27" class="com.codebin.circle">
+            <constraints>
+              <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="50" height="50"/>
+                <preferred-size width="50" height="50"/>
+                <maximum-size width="50" height="50"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="838f" class="com.codebin.circle">
+            <constraints>
+              <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="50" height="50"/>
+                <preferred-size width="50" height="50"/>
+                <maximum-size width="50" height="50"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="e9486" class="com.codebin.circle">
+            <constraints>
+              <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="50" height="50"/>
+                <preferred-size width="50" height="50"/>
+                <maximum-size width="50" height="50"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="34598" class="com.codebin.circle">
+            <constraints>
+              <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="50" height="50"/>
+                <preferred-size width="50" height="50"/>
+                <maximum-size width="50" height="50"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="6202" class="com.codebin.circle">
+            <constraints>
+              <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="50" height="50"/>
+                <preferred-size width="50" height="50"/>
+                <maximum-size width="50" height="50"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="45b0e" class="com.codebin.circle">
+            <constraints>
+              <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="50" height="50"/>
+                <preferred-size width="50" height="50"/>
+                <maximum-size width="50" height="50"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="6e120" class="com.codebin.circle">
+            <constraints>
+              <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="50" height="50"/>
+                <preferred-size width="50" height="50"/>
+                <maximum-size width="50" height="50"/>
+              </grid>
+            </constraints>
+            <properties/>
           </component>
         </children>
       </grid>

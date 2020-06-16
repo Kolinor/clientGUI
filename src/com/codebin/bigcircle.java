@@ -13,7 +13,7 @@ public class bigcircle extends JComponent {
     public void paintComponent(Graphics g){
         //Vous verrez cette phrase chaque fois que la méthode sera invoquée
         System.out.println("Je suis un gros cercle!");
-        g.fillOval(0, 0, 50, 50 );
+        g.fillOval(0, 0, 45, 45 );
     }
 
 }
