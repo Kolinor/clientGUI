@@ -25,8 +25,10 @@ public class Main {
 
         while(true) {
 
+
             int retour = 0;
             retour  = mgui.getInfoConnexionOk();
+            Thread.sleep(1000);
             if (retour == 0) {
 
                 System.out.println("merde");
@@ -92,6 +94,8 @@ public class Main {
             verifieChaine = mgui.getTextPseudo();
 
             System.out.println(verifieChaine);
+            
+            Thread.sleep(1000);
             if ((r != 0) && (!verifieChaine.equals(""))) {
 
                monPseudo = mgui.getTextPseudo();
@@ -138,11 +142,17 @@ public class Main {
           // if(choix.equals("2"))
             if (menuChoix == 1) {
 
+                mgui.afficherElementsDifficulte();
+
                 System.out.print(menuChoix);
                 System.out.print("nique ta mère");
 
+                while(mgui.getInfoChoixDiffClicked() == 0) System.out.println("boucled"); Thread.sleep(1000);
+
                 //str = command.lireEcran("Quel niveaux de difficultés voulez-vous ?");
-                mgui.afficherElementsDifficulte();
+
+                str = new String(String.valueOf(mgui.getChoixDifficulte()));
+                System.out.println(str);
 
                 difficulty = Integer.parseInt(str);
                 //System.out.println(str);
@@ -162,6 +172,8 @@ public class Main {
                 }
            // } else if (choix.equals("2")) {
             } else if (menuChoix == 2) {
+
+                System.out.println("pas de mode compétition");
 
             //} else if (choix.equals("3")) {
             } else if (menuChoix == 3) {

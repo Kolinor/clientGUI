@@ -39,10 +39,12 @@ public class mastermindgui extends Container {
     private JButton boutonPseudo;
     private JComboBox comboBoxDiff;
     private JLabel labelDiff;
+    private JTextField textFieldDiff;
     private int choixCombo;
     private int infoConnexionOk;
     private int infoPseudoOk;
-    private int choixComboDifficulte;
+    private int choixDifficulte;
+    private int infoChoixDiffClicked;
 
 
 
@@ -105,11 +107,12 @@ public class mastermindgui extends Container {
             @Override
             public void itemStateChanged(ItemEvent e) {
                 String choix1 = "Mode classique";
-                String choix2 = "Mode aventurier";
-                String choix3 = "Mode compétition";
+                String choix2 = "Mode compétition";
+                String choix3 = "Mode aventurier";
 
                 if(comboBoxChoix.getSelectedItem().equals(choix1)){
                     choixCombo = 1;
+                    System.out.println("hmmmmm");
                 }else if(comboBoxChoix.getSelectedItem().equals(choix2)){
                     choixCombo = 2;
                 }else if (comboBoxChoix.getSelectedItem().equals(choix3)){
@@ -135,27 +138,14 @@ public class mastermindgui extends Container {
                 System.out.println(infoPseudoOk);
             }
         });
-        comboBoxDiff.addItemListener(new ItemListener() {
+
+        envoyerButton.addActionListener(new ActionListener() {
             @Override
-            public void itemStateChanged(ItemEvent e) {
-
-                switch (choixComboDifficulte){
-
-                    case(1):
-                    case(6):
-
-                        break;
-                    case(2):
-                        break;
-                    case(3):
-                        break;
-                    case(4):
-                        break;
-                    case(5):
-                        break;
-                    default: System.out.println("ALERTE ALERTE");
-
-                }
+            public void actionPerformed(ActionEvent e) {
+                infoChoixDiffClicked ++;
+                choixDifficulte = 0;
+                choixDifficulte =Integer.parseInt(textFieldDiff.getText());
+                menuDifficulte(choixDifficulte, textArea1);
 
             }
         });
@@ -247,7 +237,7 @@ public class mastermindgui extends Container {
     public void afficherElementsDifficulte(){
 
         labelDiff.setVisible(true);
-        comboBoxDiff.setVisible(true);
+        textFieldDiff.setVisible(true);
 
 
     }
@@ -258,22 +248,65 @@ public class mastermindgui extends Container {
 
     }
 
+    public static void menuDifficulte(int choixDifficulte, JTextArea a) {
+
+        String str = new String("- Difficulté " + choixDifficulte + "\n");
+
+        switch (choixDifficulte) {
+
+            case (1):
+                a.append(str);
+                break;
+            case (2):
+                a.append(str);
+                break;
+            case (3):
+                a.append(str);
+                break;
+            case (4):
+                a.append(str);
+                break;
+            case (5):
+                a.append(str);
+                break;
+            case (6):
+                a.append(str);
+                break;
+            default:
+                a.append("Hacked by mastermind");
+
+        }
 
 
+    }
+
+        public int getInfoChoixDiffClicked(){
 
 
+        return infoChoixDiffClicked;
 
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
+    public int getChoixDifficulte() {
+        return choixDifficulte;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
