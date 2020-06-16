@@ -725,7 +725,7 @@
                       <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
                     </constraints>
                   </vspacer>
-                  <component id="d522c" class="com.codebin.littlecircle" binding="littlecircle4" default-binding="true">
+                  <component id="d522c" class="com.codebin.littlecircle" binding="littlecircle90">
                     <constraints>
                       <grid row="0" column="9" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
                         <minimum-size width="25" height="25"/>
@@ -775,7 +775,7 @@
                     </constraints>
                     <properties/>
                   </component>
-                  <component id="5521d" class="com.codebin.littlecircle" binding="littlecircle17" default-binding="true">
+                  <component id="5521d" class="com.codebin.littlecircle" binding="littlecircle4">
                     <constraints>
                       <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
                         <minimum-size width="25" height="25"/>
@@ -783,7 +783,7 @@
                     </constraints>
                     <properties/>
                   </component>
-                  <component id="1c771" class="com.codebin.littlecircle" binding="littlecircle19" default-binding="true">
+                  <component id="1c771" class="com.codebin.littlecircle" binding="littlecircle3">
                     <constraints>
                       <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
                         <minimum-size width="25" height="25"/>
@@ -791,7 +791,7 @@
                     </constraints>
                     <properties/>
                   </component>
-                  <component id="87af1" class="com.codebin.littlecircle" binding="littlecircle20" default-binding="true">
+                  <component id="87af1" class="com.codebin.littlecircle" binding="littlecircle2">
                     <constraints>
                       <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
                         <minimum-size width="25" height="25"/>
@@ -799,7 +799,7 @@
                     </constraints>
                     <properties/>
                   </component>
-                  <component id="bb671" class="com.codebin.littlecircle" binding="littlecircle21" default-binding="true">
+                  <component id="bb671" class="com.codebin.littlecircle" binding="littlecircle1">
                     <constraints>
                       <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
                         <minimum-size width="25" height="25"/>

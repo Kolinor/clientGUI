@@ -15,18 +15,40 @@ public class mastermindgui extends Container {
     private JComboBox comboBoxChoix;
     private JButton envoyerButton;
     private JButton sauvegarderMaPartieButton;
-    private littlecircle littlecircle4;
+    private littlecircle littlecircle90;
     private littlecircle littlecircle5;
     private littlecircle littlecircle13;
     private littlecircle littlecircle14;
     private littlecircle littlecircle15;
     private littlecircle littlecircle16;
-    private littlecircle littlecircle17;
-    private littlecircle littlecircle19;
-    private littlecircle littlecircle20;
-    private littlecircle littlecircle21;
+    private littlecircle littlecircle4;
+
+    public littlecircle getLittlecircle4() {
+        return littlecircle4;
+    }
+
+    public littlecircle getLittlecircle3() {
+        return littlecircle3;
+    }
+
+    public littlecircle getLittlecircle2() {
+        return littlecircle2;
+    }
+
+    public littlecircle getLittlecircle1() {
+        return littlecircle1;
+    }
+
+    private littlecircle littlecircle3;
+    private littlecircle littlecircle2;
+    private littlecircle littlecircle1;
     private circle circle12;
     private circle circle11;
+
+    public JTextArea getTextArea1() {
+        return textArea1;
+    }
+
     private JTextArea textArea1;
     private JButton button1;
     private JTextField textField1;
@@ -75,6 +97,15 @@ public class mastermindgui extends Container {
     private circle circle37;
     private circle circle38;
     private circle circle39;
+    private Boolean buttonClicked = false;
+
+    public Boolean getButtonClicked() {
+        return buttonClicked;
+    }
+
+    public void setButtonClicked(Boolean buttonClicked) {
+        this.buttonClicked = buttonClicked;
+    }
 
     public circle getCircle12() {
         return circle12;
@@ -604,9 +635,6 @@ public class mastermindgui extends Container {
             }
         });
 
-
-
-
         comboBoxChoix.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
@@ -616,7 +644,6 @@ public class mastermindgui extends Container {
 
                 if(comboBoxChoix.getSelectedItem().equals(choix1)){
                     choixCombo = 1;
-                    System.out.println("hmmmmm");
                 }else if(comboBoxChoix.getSelectedItem().equals(choix2)){
                     choixCombo = 2;
                 }else if (comboBoxChoix.getSelectedItem().equals(choix3)){
@@ -653,10 +680,20 @@ public class mastermindgui extends Container {
 
             }
         });
+        button1.addActionListener(new ActionListener() {
+            /**
+             * Invoked when an action occurs.
+             *
+             * @param e the event to be processed
+             */
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                setButtonClicked(true);
+            }
+        });
     }
 
     public void setColorCircle(circle c) {
-
         String color = circleColor.get(c.getToolTipText());
         int i = couleur.indexOf(color);
 
@@ -669,14 +706,7 @@ public class mastermindgui extends Container {
         circleColor.put(c.getToolTipText(), color);
 
         c.setForeground(this.indice.get(color));
-
-        System.out.println(color);
-
     }
-
-
-
-
 
     public void ecrire (String t){
         textArea1.setText(t);
@@ -752,6 +782,10 @@ public class mastermindgui extends Container {
 
     }
 
+    public ArrayList<String> getCouleur() {
+        return couleur;
+    }
+
     public static void menuDifficulte(int choixDifficulte, JTextArea a) {
 
         String str = new String("- Difficulté " + choixDifficulte + "\n");
@@ -793,6 +827,10 @@ public class mastermindgui extends Container {
 
     public int getChoixDifficulte() {
         return choixDifficulte;
+    }
+
+    public HashMap<String, String> getCircleColor() {
+        return circleColor;
     }
 }
 

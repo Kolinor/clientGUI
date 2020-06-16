@@ -1,12 +1,33 @@
 package com.codebin;
 
+import javax.swing.*;
+import java.awt.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Utility {
     private ArrayList<String> couleur = new ArrayList<>();
     private boolean isWin = false;
     private boolean isLoose = false;
     private int difficulty;
+    private littlecircle c1;
+    private littlecircle c2;
+    private littlecircle c3;
+    private littlecircle c4;
+    private JTextArea area;
+    private HashMap<String, Color> indice = new HashMap<>();
+
+
+    public Utility(littlecircle c1, littlecircle c2, littlecircle c3, littlecircle c4, JTextArea area) {
+        this.c1 = c1;
+        this.c2 = c2;
+        this.c3 = c3;
+        this.c4 = c4;
+        this.area = area;
+        indice.put("rouge", new Color(255, 0, 15));
+        indice.put("orange", new Color(255, 140, 11));
+        indice.put("vert", new Color(24, 227, 21));
+    }
 
     public void couleurDisponible() {
         for (int i = 0; i < couleur.size(); i++) {
@@ -23,18 +44,29 @@ public class Utility {
 
     public void getIndiceCouleur(String response) {
         String[] arrOfStr = response.split(" ");
-        String str = "Indice : ";
 
-        for (String s : arrOfStr) {
-            if (!s.equals("!indice")) str += s + " ";
+        for (int i = 0; i < arrOfStr.length; i++) {
+            switch (i) {
+                case 1:
+                    c1.setForeground(indice.get(arrOfStr[i]));
+                    break;
+                case 2:
+                    c2.setForeground(indice.get(arrOfStr[i]));
+                    break;
+                case 3:
+                    c3.setForeground(indice.get(arrOfStr[i]));
+                    break;
+                case 4:
+                    c4.setForeground(indice.get(arrOfStr[i]));
+                    break;
+            }
         }
-        System.out.println(str);
     }
 
     public void win(String response) {
         String[] arrOfStr = response.split(" ");
         isWin = true;
-        System.out.println("Tu as gagné en " + arrOfStr[1] + " essai(s) !");
+        this.area.append("Tu as gagné en " + arrOfStr[1] + " essai(s) !");
     }
 
     public boolean getWin() throws InterruptedException {
@@ -49,7 +81,7 @@ public class Utility {
     public void loose(String response) {
         String[] arrOfStr = response.split(" ");
         isLoose = true;
-        System.out.println("Tu as perdu en " + arrOfStr[1] + " essai(s) !");
+        this.area.append("Tu as perdu en " + arrOfStr[1] + " essai(s) !");
     }
 
     public boolean getLoose() throws InterruptedException {

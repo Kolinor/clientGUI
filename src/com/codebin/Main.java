@@ -21,6 +21,9 @@ public class Main {
         String monAdresseIP;
         int monPort ;
         String monPseudo =null;
+        ArrayList<String> couleur = new ArrayList<>();
+        couleur = mgui.getCouleur();
+
         ArrayList<circle> l1 = new ArrayList<>();
         ArrayList<circle> l2 = new ArrayList<>();
         ArrayList<circle> l3 = new ArrayList<>();
@@ -136,7 +139,7 @@ public class Main {
 
         //UIManager.setLookAndFeel("com.sun.java.swing.plaf.motif.MotifLookAndFeel");
 
-        Utility u = new Utility();
+        Utility u = new Utility(mgui.getLittlecircle1(), mgui.getLittlecircle2(), mgui.getLittlecircle3(), mgui.getLittlecircle4(), mgui.getTextArea1());
         IOCommand command = new IOCommand(u);
 
         boolean connexion = command.connexion(monAdresseIP, monPort);
@@ -185,6 +188,12 @@ public class Main {
         Thread.sleep(100);
 
         mgui.writeTextArea1("Tu peux maintenant choisir ton mode de jeu");
+        int tour = 0;
+        String c1;
+        String c2;
+        String c3;
+        String c4;
+        String getCircle;
 
         do {
 
@@ -205,7 +214,7 @@ public class Main {
                 System.out.print(menuChoix);
                 System.out.print("nique ta mère");
 
-                while(mgui.getInfoChoixDiffClicked() == 0) System.out.println("boucled"); Thread.sleep(1000);
+                while(mgui.getInfoChoixDiffClicked() == 0) Thread.sleep(1000);
 
                 //str = command.lireEcran("Quel niveaux de difficultés voulez-vous ?");
 
@@ -215,18 +224,33 @@ public class Main {
                 difficulty = Integer.parseInt(str);
                 //System.out.println(str);
                 command.ecrireReseau("!1 " + str);
+                tour = 0;
 
                 while (true) {
                     if (u.getWin()) break;
                     if (u.getLoose()) break;
                     command.ecrireEcran("Choisir une combinaison");
-//                    u.couleurDisponible();
-                    str = command.lireEcran("Rentrer une combinaison de " + difficulty + " couleurs ou 'quit'");
+                    str = "";
+
+                    while (!mgui.getButtonClicked()) Thread.sleep(100);
+                    mgui.setButtonClicked(false);
+
+                    if (tour == 1) {
+                        System.out.println("aaa");
+                    }
+
+                    for (int i = 0; lignesC.get(tour).size() > i; i++) {
+                        getCircle = lignesC.get(tour).get(i).getToolTipText();
+                        System.out.println(couleur.indexOf(mgui.getCircleColor().get(getCircle)));
+                        str += couleur.indexOf(mgui.getCircleColor().get(getCircle)) + " ";
+                    }
+
                     if (str.equals("quit")) {
                         command.ecrireReseau("stop");
                         break;
                     }
                     command.ecrireReseau("!1 " + str);
+                    tour++;
                 }
            // } else if (choix.equals("2")) {
             } else if (menuChoix == 2) {

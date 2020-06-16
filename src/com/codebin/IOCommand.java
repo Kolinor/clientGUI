@@ -1,8 +1,10 @@
 package com.codebin;
 
+import java.awt.*;
 import java.io.*;
 import java.net.Socket;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class IOCommand {
@@ -11,7 +13,6 @@ public class IOCommand {
     private Socket socket;
     private boolean isRunning;
     private Utility u;
-
 
     public IOCommand(Utility u) throws IOException {
         this.u = u;
