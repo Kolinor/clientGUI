@@ -28,6 +28,7 @@
               <background color="-16777216"/>
               <foreground color="-16777216"/>
               <opaque value="false"/>
+              <toolTipText value="circle1 1"/>
             </properties>
           </component>
           <component id="efc7c" class="com.codebin.circle">
@@ -291,6 +292,7 @@
             <properties>
               <background color="-16777216"/>
               <foreground color="-16777216"/>
+              <toolTipText value="circle1 4"/>
             </properties>
           </component>
           <component id="b7b07" class="com.codebin.circle">
@@ -304,6 +306,7 @@
             <properties>
               <background color="-16777216"/>
               <foreground color="-16777216"/>
+              <toolTipText value="circle1 3"/>
             </properties>
           </component>
           <component id="949d" class="com.codebin.circle">
@@ -317,6 +320,7 @@
             <properties>
               <background color="-16777216"/>
               <foreground color="-16777216"/>
+              <toolTipText value="circle1 2"/>
             </properties>
           </component>
           <component id="5a792" class="com.codebin.circle" binding="circle11">
@@ -341,7 +345,9 @@
                 <maximum-size width="50" height="50"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <toolTipText value="circle5 1"/>
+            </properties>
           </component>
           <component id="e4ca3" class="com.codebin.circle">
             <constraints>
@@ -351,7 +357,9 @@
                 <maximum-size width="50" height="50"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <toolTipText value="circle3 1"/>
+            </properties>
           </component>
           <component id="58c3f" class="com.codebin.circle">
             <constraints>
@@ -361,7 +369,9 @@
                 <maximum-size width="50" height="50"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <toolTipText value="circle4 1"/>
+            </properties>
           </component>
           <component id="34ee0" class="com.codebin.circle">
             <constraints>
@@ -371,7 +381,9 @@
                 <maximum-size width="50" height="50"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <toolTipText value="circle2 1"/>
+            </properties>
           </component>
           <component id="f8a24" class="com.codebin.circle">
             <constraints>
@@ -381,7 +393,9 @@
                 <maximum-size width="50" height="50"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <toolTipText value="circle5 2"/>
+            </properties>
           </component>
           <component id="d0af2" class="com.codebin.circle">
             <constraints>
@@ -391,7 +405,9 @@
                 <maximum-size width="50" height="50"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <toolTipText value="circle4 2"/>
+            </properties>
           </component>
           <component id="9a2f3" class="com.codebin.circle">
             <constraints>
@@ -401,7 +417,9 @@
                 <maximum-size width="50" height="50"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <toolTipText value="circle3 2"/>
+            </properties>
           </component>
           <component id="e3ca0" class="com.codebin.circle">
             <constraints>
@@ -411,7 +429,9 @@
                 <maximum-size width="50" height="50"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <toolTipText value="circle2 2"/>
+            </properties>
           </component>
           <component id="92986" class="com.codebin.circle">
             <constraints>
@@ -421,7 +441,9 @@
                 <maximum-size width="50" height="50"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <toolTipText value="circle5 3"/>
+            </properties>
           </component>
           <component id="c2e27" class="com.codebin.circle">
             <constraints>
@@ -431,7 +453,9 @@
                 <maximum-size width="50" height="50"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <toolTipText value="circle4 3"/>
+            </properties>
           </component>
           <component id="838f" class="com.codebin.circle">
             <constraints>
@@ -441,7 +465,9 @@
                 <maximum-size width="50" height="50"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <toolTipText value="circle3 3"/>
+            </properties>
           </component>
           <component id="e9486" class="com.codebin.circle">
             <constraints>
@@ -451,7 +477,9 @@
                 <maximum-size width="50" height="50"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <toolTipText value="circle2 3"/>
+            </properties>
           </component>
           <component id="34598" class="com.codebin.circle">
             <constraints>
@@ -461,7 +489,9 @@
                 <maximum-size width="50" height="50"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <toolTipText value="circle2 4"/>
+            </properties>
           </component>
           <component id="6202" class="com.codebin.circle">
             <constraints>
@@ -471,7 +501,9 @@
                 <maximum-size width="50" height="50"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <toolTipText value="circle3 4"/>
+            </properties>
           </component>
           <component id="45b0e" class="com.codebin.circle">
             <constraints>
@@ -481,7 +513,9 @@
                 <maximum-size width="50" height="50"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <toolTipText value="circle4 4"/>
+            </properties>
           </component>
           <component id="6e120" class="com.codebin.circle">
             <constraints>
@@ -491,7 +525,9 @@
                 <maximum-size width="50" height="50"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <toolTipText value="circle5 4"/>
+            </properties>
           </component>
         </children>
       </grid>
