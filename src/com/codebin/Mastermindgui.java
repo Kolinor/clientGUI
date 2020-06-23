@@ -459,13 +459,6 @@ public class Mastermindgui extends Container {
                 setColorCircle(Circle17);
             }
         });
-        Circle17.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                super.mouseClicked(e);
-                setColorCircle(Circle17);
-            }
-        });
         Circle18.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -659,7 +652,6 @@ public class Mastermindgui extends Container {
             @Override
             public void actionPerformed(ActionEvent e) {
                 infoPseudoOk++;
-                System.out.println(infoPseudoOk);
             }
         });
 

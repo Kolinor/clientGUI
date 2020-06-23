@@ -122,11 +122,8 @@ public class Main {
 
 
             } else {
-                System.out.println("yes");
                 monAdresseIP = mgui.getTextAdresseIP();
                 monPort = Integer.parseInt(mgui.getTextPort());
-                System.out.println(monPort);
-                System.out.println(monAdresseIP);
                 mgui.writeTextArea1("Connexion réussie");
                 mgui.writeTextArea1("Adresse IP : " + monAdresseIP + " Port : " + monPort);
 
@@ -166,7 +163,7 @@ public class Main {
             r = mgui.getInfoPseudoOk();
             verifieChaine = mgui.getTextPseudo();
 
-            System.out.println(verifieChaine);
+//            System.out.println(verifieChaine);
             
             Thread.sleep(500);
             if ((r != 0) && (!verifieChaine.equals(""))) {
@@ -232,31 +229,27 @@ public class Main {
                     {
                         mgui.reinitialiserColorCercle();
                         mgui.writeTextArea1("Rejoue!");
-                        break;}
-                    if (u.getLoose())
-                    {
-                        mgui.reinitialiserColorCercle();
-                        mgui.writeTextArea1("Rejoue!");
                         break;
                     }
-                    command.ecrireEcran("Choisir une combinaison");
+//                    command.ecrireEcran("Choisir une combinaison");
                     str = "";
 
                     while (!mgui.getButtonClicked()) Thread.sleep(100);
                     mgui.setButtonClicked(false);
 
-                    if (tour == 1) {
-                        System.out.println("aaa");
-                    }
-
                     for (int i = 0; lignesC.get(tour).size() > i; i++) {
                         getCircle = lignesC.get(tour).get(i).getToolTipText();
-                        System.out.println(couleur.indexOf(mgui.getCircleColor().get(getCircle)));
                         str += couleur.indexOf(mgui.getCircleColor().get(getCircle)) + " ";
                     }
 
                     if (str.equals("quit")) {
                         command.ecrireReseau("stop");
+                        break;
+                    }
+                    if (u.getLoose())
+                    {
+                        mgui.reinitialiserColorCercle();
+                        mgui.writeTextArea1("Rejoue!");
                         break;
                     }
                     command.ecrireReseau("!1 " + str);
@@ -265,12 +258,12 @@ public class Main {
            // } else if (choix.equals("2")) {
             } else if (menuChoix == 2) {
 
-                System.out.println("pas de mode compétition");
+//                System.out.println("pas de mode compétition");
                 mgui.writeTextArea1("Pas encore de mode compétition");
 
             //} else if (choix.equals("3")) {
             } else if (menuChoix == 3) {
-                command.ecrireEcran("Bienvenue dans le mode aventure !");
+//                command.ecrireEcran("Bienvenue dans le mode aventure !");
                 str = command.lireEcran("1. Nouvelle partie\n2. Charger une partie");
                 select = Integer.parseInt(str);
                 command.ecrireReseau("!3 " + str);
@@ -282,7 +275,7 @@ public class Main {
                             Thread.sleep(100);
                             if (u.getWin()) break;
                             if (u.getLoose()) break;
-                            command.ecrireEcran("Choisir une combinaison");
+//                            command.ecrireEcran("Choisir une combinaison");
                             u.couleurDisponible();
                             str = command.lireEcran("Rentrer une combinaison de " + u.getDifficulty() + " couleurs ou 'quit' ou save");
                             if (str.equals("save")) {
@@ -297,7 +290,7 @@ public class Main {
                             }
                             command.ecrireReseau("!1 " + str);
                         }
-                        if (difficulty == 10) command.ecrireEcran("Vous avez terminé le mode aventure !");
+//                        if (difficulty == 10) command.ecrireEcran("Vous avez terminé le mode aventure !");
                         difficulty++;
                     }
                 } else {
